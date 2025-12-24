@@ -1,0 +1,469 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-7.1.0-web/css/all.min.css">
+    <link rel="stylesheet" href="admin-pnl.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+
+<body dir="rtl">
+    <!--Header-->
+    <header class="container-fluid">
+        <!--Nvigation-->
+        <nav class="navbar navbar-light navbar-expand-md row p-0 py-md-2">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navColl">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navColl">
+                <div class="container-fluid justify-content-center">
+                    <div class="row w-100">
+                        <!--sidebar-->
+                        <aside
+                            class="SideBar fixed-top col-xl-2 col-lg-3 col-md-4 py-4 d-flex flex-column align-items-center">
+                            <h4 class="text-white text-center">اسم سایت</h4>
+                            <div class="profile_sidebar p-2 my-2 w-100 text-center d-flex align-items-center">
+                                <img src="p1.jpg" class="rounded-circle" style="width: 65px;" alt="">
+                                <a class="text-white mr-2">نام کاربری</a>
+                            </div>
+                            <ul class="nav text-white w-100 d-flex flex-column">
+                                <li class="nav-item text-right py-1 my-1 w-100 nav-item-active"><a href=""
+                                        class="nav-link text-white"><i class="fa fa-home ml-2"></i>داشبورد</a></li>
+                                <li class="nav-item text-right py-1 my-1 w-100"><a href=""
+                                        class="nav-link text-white"><i class="fa fa-person ml-2"></i>پروفایل</a></li>
+                                <li class="nav-item text-right py-1 my-1 w-100"><a href=""
+                                        class="nav-link text-white"><i class="fa fa-envelope ml-2"></i>پیام ها</a></li>
+                                <li class="nav-item text-right py-1 my-1 w-100"><a href=""
+                                        class="nav-link text-white"><i class="fa fa-basket-shopping ml-2"></i>فروش</a>
+                                </li>
+                                <li class="nav-item text-right py-1 my-1 w-100"><a href=""
+                                        class="nav-link text-white"><i class="fa fa-chart-area ml-2"></i>تحلیل</a></li>
+                                <li class="nav-item text-right py-1 my-1 w-100"><a href=""
+                                        class="nav-link text-white"><i class="fa fa-chart-bar ml-2"></i>نمودار ها</a>
+                                </li>
+                                <li class="nav-item text-right py-1 my-1 w-100"><a href=""
+                                        class="nav-link text-white"><i class="fa fa-table ml-2"></i>جدول ها</a></li>
+                                <li class="nav-item text-right py-1 my-1 w-100"><a href=""
+                                        class="nav-link text-white"><i class="fa fa-wrench ml-2"></i>تنظیمات</a></li>
+                            </ul>
+                        </aside>
+                        <!--navigation bar-->
+                        <section
+                            class="topNav navbar-nav col-xl-10 col-lg-9 col-md-8 bg-dark py-2 px-0 fixed-top mr-auto d-flex justify-content-between align-items-center">
+                            <div class=" col-1 pr-1 nav-brand h3 text-white">داشبورد</div>
+                            <form action="#" class=" form-inline col-xl-5 col-lg-8 px-0 my-auto mr-5">
+                                <div class="input-group my-auto px-0 mx-0 col-12">
+                                    <div class="input-group-prepend mx-0"><button type="button"
+                                            class="searchBtn btn rounded-circle p-2"><i
+                                                class="fa fa-search"></i></button></div>
+                                    <input type="search" maxlength="50" class="py-1 text-white col-10" id="navSearch"
+                                        placeholder="جستجو">
+                                </div>
+                            </form>
+                            <div class="navbarbuttons col-2 d-flex justify-content-between">
+                                <a href="#" class=" text-white text-muted"><i class="fa fa-bell"></i></a>
+                                <a href="#" class=" mr-lg-3 ml-lg-auto text-white text-muted"><i
+                                        class="fa fa-comment"></i></a>
+                                <a href="#" class="" role="button" data-target="#navExitModal" data-toggle="modal"><i
+                                        class="fa fa-sign-out text-danger"></i></a>
+                                <div class="modal fade" id="navExitModal" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <div class="modal-title">آیا میخواهید خارج شوید ؟</div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>در صورت خروج ، برای دسترسی به پنل باید مجددا وارد شوید</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-danger" data-dismiss="modal">خارج می
+                                                    شوم</button>
+                                                <button class="btn btn-success">می مانم</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!--End of Navigation-->
+    </header>
+    <!--End of Header-->
+    <!--main content of site-->
+    <main class="main-content col-xl-10 col-lg-9 col-md-8 mr-auto mb-3">
+        <!--first status cards-->
+        <section class="status-cards card-group mt-5 pt-3 px-2 row">
+            <div class="col-lg-3 col-md-6 col-sm-12 my-2 ">
+                <div class="card">
+                    <div class="card-body d bg-transparent border-0-flex justify-content-between align-items-center">
+                        <div class="status-card-title text-right">
+                            <span>30 میلیون</span>
+                        </div>
+                        <i class="fa fa-shopping-cart text-warning"></i>
+                    </div>
+                    <div class="card-footer text-left">
+                        <button type="button" class="btn"><i class="fa fa-sync"></i><span class="mx-2">به روز
+                                رسانی</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 my-2 ">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="status-card-title text-right">
+                            <p>هزینه</p>
+                            <span>5 میلیون</span>
+                        </div>
+                        <i class="fa fa-money-bill text-success"></i>
+                    </div>
+                    <div class="card-footer text-left">
+                        <button type="button" class="btn"><i class="fa fa-sync"></i><span class="mx-2">به روز
+                                رسانی</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 my-2 ">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="status-card-title text-right">
+                            <p>کاربران</p>
+                            <span>5000</span>
+                        </div>
+                        <i class="fa fa-group text-info"></i>
+                    </div>
+                    <div class="card-footer text-left">
+                        <button type="button" class="btn"><i class="fa fa-sync"></i><span class="mx-2">به روز
+                                رسانی</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 my-2 ">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="status-card-title text-right">
+                            <p>بازدید</p>
+                            <span>10000</span>
+                        </div>
+                        <i class="fa fa-chart-line text-danger"></i>
+                    </div>
+                    <div class="card-footer text-left">
+                        <button type="button" class="btn"> <i class="fa fa-sync"></i><span class="mx-2">به روز
+                                رسانی</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--progress bar and tasks to do list containers-->
+        <section class="progress-and-to-do-list mt-5 px-3 py-2 row">
+            <!--progresses-->
+            <div class="col-xl-6 col-lg-12 progress-works bg-dark text-white text-right p-3 rounded my-2">
+                <h3 class="mb-4">پروژه ها</h3>
+                <span>کتابخانه آنلاین</span>
+                <div class="progress mb-3 mt-1" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 85%;">
+                        85%</div>
+                </div>
+                <span>اپلیکیشن نئون</span>
+                <div class="progress mb-3 mt-1" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 30%;">
+                        30%</div>
+                </div>
+                <span>وب سرویس</span>
+                <div class="progress mb-3 mt-1" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 50%;">
+                        50%</div>
+                </div>
+            </div>
+            <!--to do list-->
+            <div class="col-xl-6 col-lg-12 to-do-list bg-transparent my-2 text-right">
+                <h3 class="mb-4 text-muted">تسک ها</h3>
+                <ul class="tasks list-unstyled w-100 p-1 my-2">
+                    <li class="d-flex justify-content-around align-items-center p-3 rounded my-3 bg-white">
+                        <div class="form-check d-flex align-items-center ml-3">
+                            <input type="checkbox" class="form-check-input" name="" id="checkbox1">
+                        </div>
+                        <span class="task-text">آماده کردن سمت بک اند</span>
+                        <button class="btn mr-auto ml-1"><i class="fa fa-trash text-danger"></i></button>
+                        <button class="btn"><i class="fa fa-edit text-primary"></i></button>
+                    </li>
+                    <li class="d-flex justify-content-around align-items-center p-3 rounded my-3 bg-white">
+                        <div class="form-check d-flex align-items-center ml-3">
+                            <input type="checkbox" class="form-check-input" name="" id="checkbox1">
+                        </div>
+                        <span class="task-text">آماده کردن سمت بک اند</span>
+                        <button class="btn mr-auto ml-1"><i class="fa fa-trash text-danger"></i></button>
+                        <button class="btn"><i class="fa fa-edit text-primary"></i></button>
+                    </li>
+                    <li class="d-flex justify-content-around align-items-center p-3 rounded my-3 bg-white">
+                        <div class="form-check d-flex align-items-center ml-3">
+                            <input type="checkbox" class="form-check-input" name="" id="checkbox1">
+                        </div>
+                        <span class="task-text">آماده کردن سمت بک اند</span>
+                        <button class="btn mr-auto ml-1"><i class="fa fa-trash text-danger"></i></button>
+                        <button class="btn"><i class="fa fa-edit text-primary"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--last ticket and pay offs tables-->
+        <section class="last-tickets mt-5 px-3 py-2 row">
+            <!--last tickets table-->
+            <div class="table1 text-center col-xl-6 col-lg-12 d-flex flex-column align-items-center my-2">
+                <h3 class="text-muted mb-3">پرداختی ها</h3>
+                <table class="table table-dark text-center table-hover rounded">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>نام</th>
+                            <th>مبلغ</th>
+                            <th>تاریخ</th>
+                            <th>وضعیت</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>محمد</td>
+                            <td>5 میلیون</td>
+                            <td>10 تیر</td>
+                            <td><span class="badge badge-success py-2 col-12">پرداخت شده</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>محمد</td>
+                            <td>5 میلیون</td>
+                            <td>10 تیر</td>
+                            <td><span class="badge badge-danger py-2 col-12">رد شده</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>محمد</td>
+                            <td>5 میلیون</td>
+                            <td>10 تیر</td>
+                            <td><span class="badge badge-warning py-2 col-12">انتظار</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>محمد</td>
+                            <td>5 میلیون</td>
+                            <td>10 تیر</td>
+                            <td>
+                                <div class="badge badge-success py-2 col-12">پرداخت شده</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link">قبلی</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">بعدی</a></li>
+                </ul>
+            </div>
+            <!--pay off table-->
+            <div class="table2 col-xl-6 col-lg-12 d-flex flex-column align-items-center my-2">
+                <h3 class="text-muted mb-3"> تیکت های اخیر</h3>
+                <table class="table table-striped text-center rounded">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>نام</th>
+                            <th>تاریخ</th>
+                            <th>عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>محمد</td>
+                            <td>10 تیر</td>
+                            <td><button type="button" class="btn btn-info px-2 py-1">پاسخ</button> </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>محمد</td>
+                            <td>10 تیر</td>
+                            <td><button type="button" class="btn btn-info px-2 py-1">پاسخ</button> </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>محمد</td>
+                            <td>10 تیر</td>
+                            <td><button type="button" class="btn btn-info px-2 py-1">پاسخ</button> </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>محمد</td>
+                            <td>10 تیر</td>
+                            <td><button type="button" class="btn btn-info px-2 py-1">پاسخ</button> </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link">قبلی</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">بعدی</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--end of main content-->
+
+    <!--start of footer-->
+    <footer class="col-xl-10 col-lg-9 col-md-8 mr-auto">
+        <section class="history-and-comments row p-3">
+            <div class="accordion col-xl-7 col-lg-6 col-md-12" id="myAccordion"> 
+                <div class="card bg-light rounded my-1" data-parent="#myAccordion">
+                    <div class="card-header p-0 bg-transparent border-0">
+                        <button class="btn w-100 d-flex align-items-center" data-toggle="collapse"
+                            data-target="#collapse1">
+                            <img src="p1.jpg" style="width: 70px;" class="img-fluid rounded mx-3" alt="">
+                            <span class="mx-3">محمد یک گقتگوی جدید ایجاد کرد</span>
+                        </button>
+                    </div>
+                    <div class="collapse show bg-white text-right" id="collapse1">
+                        <div class="p-3">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی
+                            مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه
+                            درصد
+                            گذشته حال و آینده
+                        </div>
+                    </div>
+                </div>
+                <div class="card  bg-light rounded my-1" data-parent="#myAccordion">
+                    <div class="card-header p-0 bg-transparent border-0">
+                        <button class="btn w-100 d-flex align-items-center" data-toggle="collapse"
+                            data-target="#collapse2">
+                            <img src="p2.jpg" style="width: 70px;" class="img-fluid rounded mx-3" alt="">
+                            <span class="mx-3">علی یک گقتگوی جدید ایجاد کرد</span>
+                        </button>
+                    </div>
+                    <div class="collapse bg-white text-right" id="collapse2">
+                        <div class="p-3">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی
+                            مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه
+                            درصد
+                            گذشته حال و آینده
+                        </div>
+                    </div>
+                </div>
+                <div class="card  bg-light rounded my-1" data-parent="#myAccordion">
+                    <div class="card-header p-0 bg-transparent border-0">
+                        <button class="btn w-100 d-flex align-items-center" data-toggle="collapse"
+                            data-target="#collapse3">
+                            <img src="p3.jpg" style="width: 70px;" class="img-fluid rounded mx-3" alt="">
+                            <span class="mx-3">رضا یک گقتگوی جدید ایجاد کرد</span>
+                        </button>
+                    </div>
+                    <div class="collapse bg-white text-right" id="collapse3">
+                        <div class="p-3">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی
+                            مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه
+                            درصد
+                            گذشته حال و آینده
+                        </div>
+                    </div>
+                </div>
+                <div class="card  bg-light rounded my-1" data-parent="#myAccordion">
+                    <div class="card-header p-0 bg-transparent border-0">
+                        <button class="btn w-100 d-flex align-items-center" data-toggle="collapse"
+                            data-target="#collapse4">
+                            <img src="p1.jpg" style="width: 70px;" class="img-fluid rounded mx-3" alt="">
+                            <span class="mx-3">محمد یک گقتگوی جدید ایجاد کرد</span>
+                        </button>
+                    </div>
+                    <div class="collapse bg-white text-right" id="collapse4">
+                        <div class="p-3">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی
+                            مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه
+                            درصد
+                            گذشته حال و آینده
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-light rounded my-1" data-parent="#myAccordion">
+                    <div class="card-header p-0 bg-transparent border-0">
+                        <button class="btn w-100 d-flex align-items-center" data-toggle="collapse"
+                            data-target="#collapse5">
+                            <img src="p1.jpg" style="width: 70px;" class="img-fluid rounded mx-3" alt="">
+                            <span class="mx-3">محمد یک گقتگوی جدید ایجاد کرد</span>
+                        </button>
+                    </div>
+                    <div class="collapse bg-white text-right" id="collapse5">
+                        <div class="p-3">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی
+                            مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه
+                            درصد
+                            گذشته حال و آینده
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 col-md-12 bg-white p-3 my-5 my-lg-0 rounded text-center">
+                <h3 class="my-2">پست جدید</h3>
+                <div class="col-12 text-center mt-5 mb-2">
+                    <a href="#" class="text-dark mx-2">
+                        <i class="fa fa-pencil text-success"></i>
+                        <span>وضعیت</span>
+                    </a>
+                    <a href="#" class="text-dark mx-2">
+                        <i class="fa fa-camera text-info"></i>
+                        <span>تصویر</span>
+                    </a>
+                    <a href="#" class="text-dark mx-2">
+                        <i class="fa fa-location-pin text-danger"></i>
+                        <span>مکان</span>
+                    </a>
+                </div>
+                <form action="#" class="col-12 my-3">
+                    <input type="text" class="form-control my-2" maxlength="100" placeholder="یه چیزی بنویس ...">
+                    <button type="submit" class="btn btn-info btn-block my-3">ارسال</button>
+                </form>
+                <div class="date-and-time col-12 d-flex justify-content-around">
+                    <div class="col-5 date d-flex flex-column justify-content-center align-items-center py-3">
+                        <i class="fa fa-clock text-warning display-3"></i>
+                        <span>9:30 صبح</span>
+                    </div>
+                    <div class="col-5 date d-flex flex-column justify-content-center align-items-center py-3">
+                        <i class="fa fa-calendar text-warning display-3"></i>
+                        <span>سه شنبه 17 تیر</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--end of footer-->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+</body>
+<script src="admin-pnl.js"></script>
+
+</html>
